@@ -1,0 +1,46 @@
+/*
+File: style.css
+Styles for my web page
+This file controls the styling for the HTML page.
+*/
+
+body {
+    font-family: arial, sans-serif;
+    margin: 40px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #0080ff;
+}
+
+p, ul, table {
+    margin-bottom: 20px;
+}
+
+a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9em;
+}
