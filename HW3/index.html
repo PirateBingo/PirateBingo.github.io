@@ -1,0 +1,46 @@
+<!-- 
+  Author: Jack Ray
+  Course: COMP 4610 GUI I
+  Homework 3: Dynamic Multiplication Table Generator
+  Description: This single-page application allows the user to generate
+  a multiplication table based on custom min/max input ranges for X and Y.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Multiplication Table</title>
+
+    <!-- Link to external CSS stylesheet for styling -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Link to external JavaScript file for table generation logic -->
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Outer table used to position input form on the left and output table on the right -->
+    <table>
+      <tr><td>
+        <!-- Input form column -->
+        <table id="input_table">
+          <!-- Form fields to receive input ranges from the user -->
+          <tr><td>Minimum value of  Y (between -50 to 50):</td></tr>
+          <tr><td><input id="min_y"></td></tr>
+          <tr><td>Maximum value of  Y (between -50 to 50):</td></tr>
+          <tr><td><input id="max_y"></td></tr>
+          <tr><td>Minimum value of  X (between -50 to 50):</td></tr>
+          <tr><td><input id="min_x"></td></tr>
+          <tr><td>Maximum value of  X (between -50 to 50):</td></tr>
+          <tr><td><input id="max_x"></td></tr>
+
+          <!-- Submit button to trigger JavaScript function to generate table -->
+          <tr><td><input id="submit" type="button" value="Submit"></td></tr>
+        </table>
+      </td><td>
+        <div>
+          <!-- Table will be dynamically populated based on input values -->
+          <table id="mult_table"></table>
+        </div>
+      </td></tr></table>
+  </body>
+</html>

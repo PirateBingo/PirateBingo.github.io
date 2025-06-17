@@ -1,0 +1,41 @@
+/* Body of index file appearance */
+body {
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+/* Center items of input divider */
+#input_table tr > td{
+    display: grid;
+    justify-self: center;
+}
+
+/* Cosmetic touches on table */
+#mult_table tr,
+#mult_table td {
+    border: 1px solid #999;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+/* Multiplication table put in scrollable divider */
+div {
+    overflow: auto;
+    max-width: 400px;
+    max-height: 400px;
+    border: 1px solid #ccc;
+}
+
+/* Outermost cells are black */
+#mult_table > tr:first-child > td,
+#mult_table > tr > td:first-child{
+    background-color: black;
+    color: white;
+}
+
+/* Inner cells are white */
+#mult_table > tr > td{
+    background-color: white;
+    color: black;
+}
