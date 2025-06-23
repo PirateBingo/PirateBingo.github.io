@@ -1,0 +1,55 @@
+/* Body background and spacing */
+body {
+  background-color: #f0f0f0;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+/* Align input form in left column */
+#input_table tr > td {
+  display: grid;
+  justify-self: center;
+}
+
+/* Style for all multiplication tables inside tabs */
+.mult_table, #mult_table {
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+/* Table cell styling */
+.mult_table td, #mult_table td {
+  border: 1px solid #999;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+/* Table scroll box */
+.mult_table, #mult_table {
+  max-width: 100%;
+  max-height: 400px;
+  overflow: auto;
+}
+
+/* Header row and column: black background */
+.mult_table > tr:first-child > td,
+.mult_table > tr > td:first-child,
+#mult_table > tr:first-child > td,
+#mult_table > tr > td:first-child {
+  background-color: black;
+  color: white;
+}
+
+/* Inner multiplication cells */
+.mult_table > tr > td,
+#mult_table > tr > td {
+  background-color: white;
+  color: black;
+}
+
+/* jQuery UI tab close "×" icon on tabs */
+.ui-tabs .ui-tabs-nav li .ui-icon-close {
+  float: right;
+  margin-left: 5px;
+  cursor: pointer;
+}

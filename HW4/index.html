@@ -1,0 +1,76 @@
+<!-- 
+  Author: Jack Ray
+  Course: COMP 4610 GUI I
+  Homework 4: Dynamic Multiplication Table with Validation and Tabs
+  Description: A jQuery-based single-page app to generate multiplication tables with validation and a tabbed UI.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Multiplication Table</title>
+
+  <!-- jQuery and jQuery UI libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+
+  <!-- jQuery Validation plugin -->
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+  <!-- External stylesheet (minimal/unstyled as requested) -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Table generation and validation logic -->
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- jQuery UI Tabs Container -->
+  <div id="tabs">
+    <ul>
+      <li><a href="#tabs-1">Input Form</a></li>
+    </ul>
+
+    <!-- Input Form Tab -->
+    <div id="tabs-1">
+      <!-- Outer table: input left, output right -->
+      <table>
+        <tr>
+          <td>
+            <!-- Input form for table ranges -->
+            <form id="form">
+              <table id="input_table">
+                <tr><td>Minimum value of Y (between -50 to 50):</td></tr>
+                <tr><td><input id="min_y" name="min_y" /></td></tr>
+                <tr><td>Maximum value of Y (between -50 to 50):</td></tr>
+                <tr><td><input id="max_y" name="max_y" /></td></tr>
+                <tr><td>Minimum value of X (between -50 to 50):</td></tr>
+                <tr><td><input id="min_x" name="min_x" /></td></tr>
+                <tr><td>Maximum value of X (between -50 to 50):</td></tr>
+                <tr><td><input id="max_x" name="max_x" /></td></tr>
+
+                <!-- Submit button triggers jQuery validation -->
+                <tr><td><input id="submit" type="button" value="Submit" /></td></tr>
+              </table>
+            </form>
+          </td>
+          <td>
+            <!-- Table output -->
+            <div>
+              <table id="mult_table"></table>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- Future tabs will be dynamically added here using jQuery -->
+  </div>
+
+  <!-- Initialize the tabs on page load -->
+  <script>
+    $(function () {
+      $("#tabs").tabs(); // initialize the tab interface
+    });
+  </script>
+</body>
+</html>
