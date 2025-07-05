@@ -1,0 +1,89 @@
+/* 
+  Author: Jack Ray
+  Course: COMP 4610 GUI I
+  Assignment: HW5 - Scrabble Drag-and-Drop
+  Description: Basic layout for Scrabble drag-and-drop game
+*/
+
+/* General page setup */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Score area */
+#score-container {
+  margin-bottom: 20px;
+}
+
+/* Scrabble board row */
+#scrabble-board {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 80px;
+  margin-bottom: 30px;
+  border: 1px solid #999;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Tile rack area */
+#tile-rack {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 80px;
+  margin-bottom: 20px;
+  border: 1px solid #999;
+  padding: 10px;
+  background-color: #eee;
+}
+
+/* Tiles (both rack and board) */
+.tile {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  background-color: #f5deb3;
+  border: 1px solid #444;
+  text-align: center;
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: move;
+}
+
+/* Board squares (drop targets) */
+.square {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border: 1px dashed #aaa;
+  background-color: #ddd;
+  text-align: center;
+  line-height: 60px;
+}
+
+/* Bonus square colors */
+.double-letter {
+  background-color: lightblue;
+}
+
+.triple-letter {
+  background-color: deepskyblue;
+}
+
+.double-word {
+  background-color: pink;
+}
+
+.triple-word {
+  background-color: red;
+}
+
+/* Controls */
+#controls button {
+  margin-right: 10px;
+  padding: 10px 15px;
+}

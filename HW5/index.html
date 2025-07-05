@@ -1,0 +1,52 @@
+<!--
+  Author: Jack Ray
+  Course: COMP 4610 GUI I
+  Assignment: HW5 - Scrabble Drag-and-Drop
+  Description: Scrabble game with draggable tiles and one-line board with scoring
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scrabble Drag-and-Drop</title>
+
+  <!-- jQuery and jQuery UI libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+
+  <!-- Game logic -->
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <h1>Scrabble One-Line Game</h1>
+
+  <!-- Score display -->
+  <div id="score-container">
+    <strong>Current Word:</strong> <span id="current-word"></span><br>
+    <strong>Score:</strong> <span id="current-score">0</span>
+  </div>
+
+  <!-- Scrabble board row (drop targets) -->
+  <div id="scrabble-board">
+    <!-- Dynamically filled by JS -->
+  </div>
+
+  <!-- Tile rack (draggable tiles) -->
+  <div id="tile-rack">
+    <!-- Dynamically filled by JS -->
+  </div>
+
+  <!-- Submit and Restart buttons -->
+  <div id="controls">
+    <button id="submit-word">Submit Word</button>
+    <button id="restart-game">Restart Game</button>
+  </div>
+
+</body>
+</html>
